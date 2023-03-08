@@ -1,0 +1,101 @@
+
+     @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;1,300&display=swap');
+
+    * {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+
+        --binder: #CCBBAA; /* Binder bg color */
+        --info: #CCBBAA;   /* Info bg color */ 
+    }
+
+    /* Layout */
+
+    body {
+
+        font-family: "Inria Serif", serif;
+        height: 100vh;
+        overflow-y: hidden;
+        color: white;
+    }
+
+    button {
+
+        border: none;
+        background: none;
+        color: white;
+        font-family: "Inria Serif", serif;
+    }
+
+    .absolute {
+
+        position: absolute;
+        height: 100vh;
+    }
+
+    .left { left: 0; }
+
+    .right { right: 0; }
+
+    .float-left { float: left; }
+
+    .float-right { float: right; }
+
+        #binder {
+
+            background-color: var(--binder);
+
+            opacity: 0.3;
+            z-index: 11;
+
+            width: 75px;
+        }
+
+        #clickedImage {
+        
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            width: 55vw;
+        }
+
+        #info {
+
+            background-color: var(--info);
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            gap: 2.5em;
+            
+            font-size: 14px;
+            width: 45vw;
+
+            padding: 0vw 6vw;
+        }
+
+            /* Info typography */
+
+            #info div:nth-of-type(1), b {
+
+                width: 100%;
+            }
+
+            #details {
+
+                line-height: 200%;
+                text-align: justify;
+            }            
+
+            #artwork-name { font-size: 2.5em; }           
+
+            button, b { cursor: pointer; }
+
+            b { font-weight: 550; text-align: right;}

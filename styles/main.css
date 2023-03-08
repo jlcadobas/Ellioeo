@@ -1,0 +1,142 @@
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;1,300&display=swap');
+
+  body {
+
+    font-family: "Inria Serif", serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFFADA;
+    margin: 0rem;
+    overflow: hidden;
+  }
+  
+  #image-track {
+
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%); 
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #image-track > .image {
+
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 476px) {
+
+    #image-track > .image {
+
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  /* -- YouTube Link Styles -- */
+  
+  body.menu-toggled > .meta-link > span {
+
+    color: rgb(30, 30, 30);
+  }
+
+  header {
+
+    position: fixed;
+    bottom: 1em;
+    left: 15em;
+  }
+
+  blockquote {
+
+    color: black;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bolder;
+    margin: 0em 0em 0.5em 0em;
+  }
+
+  b {
+
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  @media only screen and (max-width: 618px) {
+
+    header {
+
+      bottom: 1.5em;
+      left: 3.5em;
+      display: block;
+      width: 80%;
+      min-width: 350px;
+    }
+
+    blockquote, b {
+
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  #source-link {
+
+    bottom: 60px;
+  }
+  
+  #source-link > i {
+
+    color: rgb(94, 106, 210);
+  }
+  
+  #yt-link > i {
+
+    color: rgb(239, 83, 80);
+  }
+  
+  .meta-link {
+
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  
+    display: inline-flex;
+    gap: 5px;
+    left: 10px;
+    padding: 10px 20px;
+    position: fixed;
+    text-decoration: none;
+    transition: background-color 400ms, border-color 400ms;
+    z-index: 10000;
+  }
+  
+  .meta-link:hover {
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .meta-link > i, .meta-link > span {
+
+    height: 20px;
+    line-height: 20px;
+  }
+  
+  .meta-link > span {
+
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+  }
