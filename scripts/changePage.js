@@ -13,6 +13,6 @@
             localStorage.setItem("imageSrc", image);
 
             // Go to artworks.html
-            location.href = "http://127.0.0.1:5500/artworks.html";
+            location.href = "http://127.0.0.1:5500/pages/artworks.html";
         });
     }
