@@ -140,3 +140,17 @@
     font-family: "Rubik", sans-serif;
     font-weight: 500;
   }
+
+  .socials img {
+
+    width: 25px;
+    height: 25px;
+    margin: 0em 0.5em;
+    cursor: pointer;
+  }
+
+  a {
+
+    text-decoration: none;
+    color: black;
+}

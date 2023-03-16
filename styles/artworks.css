@@ -30,6 +30,7 @@
         background: none;
         color: inherit;
         font-family: "Inria Serif", serif;
+        font-size: inherit;
     }
 
     .absolute {
@@ -54,6 +55,7 @@
             z-index: 11;
 
             width: 75px;
+            height: 100vh;
         }
 
         #clickedImage {
@@ -79,6 +81,34 @@
             width: 45vw;
 
             padding: 0vw 6vw;
+            height: 100vh;
+        }
+
+        /*  Media Queries:
+
+            Laptop: 1024px wide screens
+        */
+
+        @media only screen and (max-width: 1024px) {
+
+            #info { font-size: 12px; }
+        }
+
+        /* Tablets: 768px wide screens */
+
+        @media only screen and (max-width: 768px) {
+
+            body { overflow-y: auto; height: 200vh; }
+
+            #binder { display: none; }
+
+            #clickedImage { width: 100vw; }
+
+            #info { width: 100vw; font-size: 10px; }
+
+            .absolute { position: static; display: block; height: 90vh; }
+
+            .left, .right { left: auto; right: auto; }
         }
 
             /* Info typography */
@@ -98,4 +128,4 @@
 
             button, b { cursor: pointer; }
 
-            b { font-weight: 550; text-align: right;}
+            b { font-weight: 550; text-align: right; visibility: hidden;}
