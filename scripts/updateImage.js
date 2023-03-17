@@ -28,7 +28,7 @@
 
         // Get the width and height of the image
         var width = image.naturalWidth;
-        var height = image. naturalHeight;
+        var height = image.naturalHeight;
 
         // Set height to 100% if width is greater than height to cover the whole div.
         // If brighness of the primary color is lighter, then set font color to black.
