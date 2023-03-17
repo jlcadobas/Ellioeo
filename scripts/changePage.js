@@ -1,5 +1,5 @@
     
-    // Attach events to each image elements, then run the jumpToArtworkPage function.
+    // Attach events to each image elements, then run the function.
 
     var numImage = document.getElementsByClassName("image");
 
@@ -12,7 +12,8 @@
 
             localStorage.setItem("imageSrc", image);
 
-            // Go to artworks.html
+            // Go to artworks.html for local. Use the other one for live changes.
             location.href = "http://127.0.0.1:5500/pages/artworks.html";
+            //location.href = "https://jlcadobas.github.io/Ellioeo/pages/artworks.html";
         });
     }

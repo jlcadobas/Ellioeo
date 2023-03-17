@@ -65,6 +65,7 @@
             background-repeat: no-repeat;
 
             width: 55vw;
+            height: 100%;
         }
 
         #info {
@@ -86,8 +87,10 @@
 
         /*  Media Queries:
 
-            Laptop: 1024px wide screens
+            Wider screens: 
         */
+
+        /* Laptops: 1024px wide screens*/
 
         @media only screen and (max-width: 1024px) {
 
@@ -98,17 +101,23 @@
 
         @media only screen and (max-width: 768px) {
 
-            body { overflow-y: auto; height: 200vh; }
+            body { overflow-y: auto; }
 
             #binder { display: none; }
 
             #clickedImage { width: 100vw; }
 
-            #info { width: 100vw; font-size: 10px; }
+            #info { width: 100vw; font-size: 12px; height: 70vh; padding: 8vw 16vw; }
 
             .absolute { position: static; display: block; height: 90vh; }
 
             .left, .right { left: auto; right: auto; }
+        }
+
+        @media only screen and (max-width: 640px) {
+
+            
+            #info { width: 100vw; font-size: 10px; height: 70vh; padding: 5vw 16vw; }
         }
 
             /* Info typography */
