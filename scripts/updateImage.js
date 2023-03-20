@@ -11,7 +11,7 @@
     var image = document.createElement("img");
 
     // Set src and id for the new image
-    image.src = "." + imagePath;
+    image.src = imagePath;
     image.id = "clickedImage";
     //image.loading = "eager";
 
