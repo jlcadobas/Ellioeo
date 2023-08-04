@@ -2,7 +2,7 @@
 
     A website designed and developed to feature an acquaintance's artworks.
 
-    Note: Ask for permission before you use the images somewhere else. (Message her at: https://www.instagram.com/eell63909) 
+    Note: Ask for permission before you use the images somewhere else. 
 
     This project is inspired based on another website, to which I'll link later. 
 
