@@ -6,25 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> ellioeo </title>
 
-        <!-- Add CDN for color thief library. -->
         <link rel="stylesheet" type="text/css" href="../styles/artworks.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
-
+        
         <!-- Artworks.html, displays three columns to feature the artwork.
             namely the div with ids "binder", "active-image", and "info" respectively.
         -->
     </head>
     <body>
         <!-- Binder div -->
-        <div class="absolute left" id="binder"> </div>
+        <div class="absolute left" id="binder" style="background-color: <?php echo $primaryImageColor; ?>;"> </div>
         
         <!-- Artwork image div -->
         <div class="absolute left" id="active-image"> 
-            
         </div>
 
         <!-- Information about the artwork div -->
-        <div class="absolute right" id="info">
+        <div class="absolute right" id="info" style="background-color: <?php echo $secondaryImageColor; ?>; ">
             <div>
                 <button type="button" class="float-left"> Previous </button>
                 <button type="button" class="float-right"> Next </button>
@@ -45,8 +42,7 @@
 
             <b> About Ellioeo </b>
         </div>
-
-        <!-- Gets the clicked artwork and display it onto this page, and to get the color pallette used in the artwork. -->
-        <script src="../scripts/updateImage.js"></script>
     </body>
+    <!-- Gets the clicked artwork and display it onto this page, and to get the color pallette used in the artwork. -->
+    <script src="../scripts/updateImage.js"></script>
 </html>   
