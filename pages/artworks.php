@@ -11,8 +11,9 @@
         <!-- Artworks.html, displays three columns to feature the artwork.
             namely the div with ids "binder", "active-image", and "info" respectively.
         -->
+        <script src="../scripts/sendUrl.js"> </script>
     </head>
-    <body>
+    <body style="color: black;" >
         <!-- Binder div -->
         <div class="absolute left" id="binder" style="background-color: <?php echo $primaryImageColor; ?>;"> </div>
         
@@ -41,8 +42,9 @@
             </p>
 
             <b> About Ellioeo </b>
+            <?php require "../scripts/getColors.php"; ?>
         </div>
+        <!-- Gets the clicked artwork and display it onto this page, and to get the color pallette used in the artwork. -->
+        <script src="../scripts/updateImage.js"> </script>
     </body>
-    <!-- Gets the clicked artwork and display it onto this page, and to get the color pallette used in the artwork. -->
-    <script src="../scripts/updateImage.js"></script>
-</html>   
+</html>

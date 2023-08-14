@@ -24,11 +24,14 @@
             $sql = "SELECT url FROM {$tableName}";
             $result = $conn->query($sql);
 
+            $id = 1;
+
             if ($result->num_rows > 0) {
                 // Output the image HTML markup
                 while ($row = $result->fetch_assoc()) {
                     $imageUrl = $row['url'];
-                    echo '<img class="image" src="' . $imageUrl . '" draggable="false" loading="eager"/>';
+                    echo '<img class="image" src="' . $imageUrl . '" draggable="false" loading="eager" id="' . $id . '"/>';
+                    $id++;
                 }
             } else {
                 echo 'No images found.';
