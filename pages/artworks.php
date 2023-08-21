@@ -7,42 +7,37 @@
         <title> ellioeo </title>
 
         <link rel="stylesheet" type="text/css" href="../styles/artworks.css" />
-        
+
         <!-- Artworks.html, displays three columns to feature the artwork.
-            namely the div with ids "binder", "active-image", and "info" respectively.
+                    namely the div with ids "binder", "active-image", and "info" respectively.
         -->
     </head>
+
     <body>
         <!-- Binder div -->
-        <div class="absolute left" id="binder" style="background-color: <?php echo $primaryImageColor; ?>;"> </div>
-        
+        <div class="absolute left" id="binder"> </div>
+
         <!-- Artwork image div -->
-        <div class="absolute left" id="active-image"> 
+        <div class="absolute left" id="active-image">
         </div>
 
         <!-- Information about the artwork div -->
-        <div class="absolute right" id="info" style="background-color: <?php echo $secondaryImageColor; ?>; ">
+        <div class="absolute right" id="info">
             <div>
                 <button type="button" class="float-left"> Previous </button>
                 <button type="button" class="float-right"> Next </button>
             </div>
 
             <div>
-                <header id="artwork-name"> Lorem Ipsum </header>
-                <span class="float-right"> 01 - 25 - 2023 </span>
+                <header id="artwork-name">  </header>
+                <span id="date" class="float-right">  </span>
             </div>
 
-            <p id="details">  
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet laborum nobis non eos atque rem ullam 
-                necessitatibus perspiciatis nihil, repellendus voluptas quas aliquam delectus ipsum id repudiandae est facilis 
-                quo? Lorem ipsum dolor sit amet consectetur, adipisicing elit.Eveniet laborum nobis non eos atque rem ullam 
-                necessitatibus perspiciatis nihil, repellendus voluptas quas aliquam delectus ipsum id repudiandae est facilis 
-                quo?
-            </p>
+            <p id="details"> </p>
 
             <b> About Ellioeo </b>
         </div>
     </body>
     <!-- Gets the clicked artwork and display it onto this page, and to get the color pallette used in the artwork. -->
     <script src="../scripts/updateImage.js"></script>
-</html>   
+</html>

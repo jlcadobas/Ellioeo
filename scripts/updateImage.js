@@ -1,21 +1,16 @@
-
     // Get src of clicked image, and reference to the div where you'll insert the new image
     var imagePath = localStorage.getItem("imageSrc");
     var divReference = document.getElementById("active-image");
-
-    // Create a new image element
-    var image = document.createElement("img");
-
-    // Set src and id for the new image
-    image.src = imagePath;
-    image.id = "clickedImage";
-    image.loading = "eager";
-
-    divReference.appendChild(image);
+    
+    var binderElement = document.getElementById("binder");
+    var infoElement = document.getElementById("info");
+    var artworkNameElement = document.getElementById("artwork-name");
+    var artworkDateElement = document.getElementById("date");
+    var detailsElement = document.getElementById("details");
 
     // Create an AJAX request
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "getColors.php", true);
+    xhr.open("POST", "../scripts/getColors.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     // Define the data to send
@@ -25,8 +20,31 @@
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
-                // Display the response from the server
-                alert(xhr.responseText);
+                // Parse the JSON response
+                var colorData = JSON.parse(xhr.responseText);
+
+                // Apply the extracted colors as background styles
+                var primaryColor = colorData.combinedData.colorData.primaryColor;
+                var secondaryColor = colorData.combinedData.colorData.secondaryColor;
+                var fontColor = colorData.combinedData.colorData.luminance > 0.5 ? "black" : "white";
+
+                artworkNameElement.textContent = colorData.combinedData.imageDetails.title;
+                artworkDateElement.textContent = colorData.combinedData.imageDetails.date;
+                detailsElement.textContent = colorData.combinedData.imageDetails.details;
+
+                binderElement.style.backgroundColor = primaryColor;
+                infoElement.style.backgroundColor = secondaryColor;
+                infoElement.style.color = fontColor;
+
+                // Now that the colors are set, create the image element
+                var image = document.createElement("img");
+
+                // Set src and id for the new image
+                image.src = imagePath;
+                image.id = "clickedImage";
+                image.loading = "eager";
+
+                divReference.appendChild(image);
             } else {
                 alert('AJAX request failed.');
             }

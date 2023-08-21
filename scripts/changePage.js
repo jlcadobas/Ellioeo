@@ -13,6 +13,6 @@
             localStorage.setItem("imageSrc", image);
 
             // Go to artworks.html for local. Use the other one for live changes.
-            location.href = "http://localhost/ellioeo-folders/Ellioeo/pages/artworks.php";
+            location.href = "http://localhost/Ellioeo/pages/artworks.php";
         });
     }
