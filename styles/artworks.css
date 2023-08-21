@@ -8,12 +8,6 @@
         box-sizing: border-box;
     }
 
-    :root {
-
-        --binder: #CCBBAA; /* Binder bg color */
-        --info: #CCBBAA;   /* Info bg color */ 
-    }
-
     /* Layout */
 
     body {
@@ -49,13 +43,13 @@
 
         #binder {
 
-            background-color: var(--binder);
-
             opacity: 0.3;
             z-index: 11;
 
             width: 75px;
             height: 100vh;
+
+            transition: background-color 0.2s ease;
         }
 
         #clickedImage {
@@ -70,8 +64,6 @@
 
         #info {
 
-            background-color: var(--info);
-
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -83,6 +75,8 @@
 
             padding: 0vw 6vw;
             height: 100vh;
+
+            transition: background-color 0.2s ease;
         }
 
         /*  Media Queries:
