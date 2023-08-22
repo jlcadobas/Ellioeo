@@ -1,4 +1,5 @@
 <?php
+    // Updates the image contents.
     require 'scripts/getImages.php';
 ?>
 

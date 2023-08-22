@@ -16,18 +16,19 @@
     // Define the data to send
     var data = "imageUrl=" + encodeURIComponent(imagePath);
 
-    // Define a callback function to handle the response
+    // Define a callback function to handle the response.
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 // Parse the JSON response
                 var colorData = JSON.parse(xhr.responseText);
 
-                // Apply the extracted colors as background styles
+                // Apply the extracted colors as background styles.
                 var primaryColor = colorData.combinedData.colorData.primaryColor;
                 var secondaryColor = colorData.combinedData.colorData.secondaryColor;
                 var fontColor = colorData.combinedData.colorData.luminance > 0.5 ? "black" : "white";
 
+                // Update the current image details to the client-side.
                 artworkNameElement.textContent = colorData.combinedData.imageDetails.title;
                 artworkDateElement.textContent = colorData.combinedData.imageDetails.date;
                 detailsElement.textContent = colorData.combinedData.imageDetails.details;
@@ -36,10 +37,10 @@
                 infoElement.style.backgroundColor = secondaryColor;
                 infoElement.style.color = fontColor;
 
-                // Now that the colors are set, create the image element
+                // Now that the colors are set, create the image element.
                 var image = document.createElement("img");
 
-                // Set src and id for the new image
+                // Set src and id for the new image.
                 image.src = imagePath;
                 image.id = "clickedImage";
                 image.loading = "eager";
