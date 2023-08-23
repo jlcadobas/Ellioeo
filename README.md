@@ -2,8 +2,9 @@
 
     A website designed and developed to feature an acquaintance's artworks.
 
-    [See the website live.] (http://ellioeo.infinityfreeapp.com/)
-    [Curious about the design? Look here.] (https://www.figma.com/file/r51ahDrsM37WUjzuxe1MrJ/Ella?type=design&node-id=0%3A1&mode=design&t=xeOO9t3JKYbjxxGa-1)
+[Visit the website here.](http://ellioeo.infinityfreeapp.com/)
+
+[Curious about the design? Look here.](https://www.figma.com/file/r51ahDrsM37WUjzuxe1MrJ/Ella?type=design&node-id=0%3A1&mode=design&t=xeOO9t3JKYbjxxGa-1)
 
 ## Table of Contents
 - [Functionalities](#functionalities)
