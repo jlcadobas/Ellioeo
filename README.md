@@ -2,6 +2,9 @@
 
     A website designed and developed to feature an acquaintance's artworks.
 
+    [See the website live.] (http://ellioeo.infinityfreeapp.com/)
+    [Curious about the design? Look here.] (https://www.figma.com/file/r51ahDrsM37WUjzuxe1MrJ/Ella?type=design&node-id=0%3A1&mode=design&t=xeOO9t3JKYbjxxGa-1)
+
 ## Table of Contents
 - [Functionalities](#functionalities)
 - [Examples](#examples)
@@ -49,7 +52,3 @@ https://github.com/jlcadobas/Ellioeo/assets/74396545/95e3ace9-d9f0-458d-aca7-5a1
 1) Slider functionality: https://www.youtube.com/watch?v=PkADl0HubMY
 2) Cloudinary API: https://cloudinary.com/documentation/how_to_integrate_cloudinary#learn_how_to_apply_image_transformations
 3) Imagga API: https://docs.imagga.com/#colors
-
-
-
-    
