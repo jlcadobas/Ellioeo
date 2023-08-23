@@ -3,11 +3,11 @@
     A website designed and developed to feature an acquaintance's artworks.
 
 ## Table of Contents
-- [Functionalities](#Functionalities)
-- [Examples](#Examples)
-- [Tech Used](#Tech-Used)
-- [File Structure](#File-Structure)
-- [References](#References)
+- [Functionalities](#functionalities)
+- [Examples](#examples)
+- [Tech Used](#tech-used)
+- [File Structure](#file-structure)
+- [References](#references)
     
 ### Functionalities   
 
