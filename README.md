@@ -2,7 +2,7 @@
 
     A website designed and developed to feature an acquaintance's artworks.
 
-[Visit the website here.](http://ellioeo.infinityfreeapp.com/)
+[Visit the website here.](https://ellioeo.infinityfreeapp.com/)
 
 [Curious about the design? Look here.](https://www.figma.com/file/r51ahDrsM37WUjzuxe1MrJ/Ella?type=design&node-id=0%3A1&mode=design&t=xeOO9t3JKYbjxxGa-1)
 
