@@ -65,15 +65,15 @@
         #info {
 
             display: flex;
-            justify-content: space-evenly;
             align-items: center;
             flex-direction: column;
-            gap: 2.5em;
+            gap: 2.5rem;
             
             font-size: 14px;
             width: 45vw;
+            max-width: 575px;
 
-            padding: 0vw 6vw;
+            padding: 3rem 5rem;
             height: 100vh;
 
             transition: background-color 0.2s ease;
@@ -92,6 +92,11 @@
         }
 
         /* Tablets: 768px wide screens */
+
+        @media only screen and (min-width: 1280px) {
+
+            #clickedImage { width: calc(100vw - 575px); }
+        }
 
         @media only screen and (max-width: 768px) {
 
@@ -121,13 +126,18 @@
                 width: 100%;
             }
 
+            #info div:nth-of-type(1) {
+                height: 20px;
+            }
+
             #details {
 
                 line-height: 200%;
                 text-align: justify;
+                overflow-y: auto;
             }            
 
-            #artwork-name { font-size: 2.5em; }           
+            #artwork-name { font-size: 2.5em; text-align: center; }           
 
             button, b { cursor: pointer; }
 
