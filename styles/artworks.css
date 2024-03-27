@@ -98,25 +98,61 @@
             #clickedImage { width: calc(100vw - 575px); }
         }
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1024px) {
 
             body { overflow-y: auto; }
 
-            #binder { display: none; }
+            #binder { 
+                position: absolute;
+                width: 100%;
+                height: 50px;
+            }
 
-            #clickedImage { width: 100vw; }
+            #active-image {
+                height: 60%;
+                position: absolute;
+                z-index: 999;
+                width: 100vw;
+            }
 
-            #info { width: 100vw; font-size: 12px; height: 70vh; padding: 8vw 16vw; }
+            #clickedImage { 
+                width: 90vw;
+                height: 100%;
+                display: block;
+                margin: 0 auto;
+                padding-top: 50px;
+            }
+
+            #info { width: 100vw; font-size: 12px; height: 100vh; padding: 8vw 16vw; max-width: unset; padding-bottom: 3rem;}
+
+            #info > div:first-child { margin-top: 60vh; }
 
             .absolute { position: static; display: block; height: 90vh; }
 
             .left, .right { left: auto; right: auto; }
+
+            b { display: none; }
         }
 
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 480px) {
 
-            
-            #info { width: 100vw; font-size: 10px; height: 70vh; padding: 5vw 16vw; }
+            #active-image {
+                height: 50%;
+            }
+
+            #binder { 
+                height: 25px;
+            }
+
+            #clickedImage { padding-top: 25px; }
+
+            #artwork-name { font-size: 2em !important;}
+
+            #info > div:first-child { margin-top: 50vh; }
+        }
+
+        #details::-webkit-scrollbar {
+            background-color: rgba(0, 0, 0, 0) !important;
         }
 
             /* Info typography */
@@ -135,6 +171,8 @@
                 line-height: 200%;
                 text-align: justify;
                 overflow-y: auto;
+                padding-right: 8px;
+                scrollbar-color: gray rgba(0, 0, 0, 0);
             }            
 
             #artwork-name { font-size: 2.5em; text-align: center; }           
